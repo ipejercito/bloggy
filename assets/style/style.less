@@ -1,0 +1,25 @@
+@full_width:100%;
+@width_holder:1200px;
+@sample_text:green;
+@center:0 auto;
+@form_login_register_rules:{
+	width:600px;
+	margin:@center;
+	margin-top:50px;
+};
+.wrapper{
+	position: relative;
+	width:@full_width;
+	.width_holder{
+		width:@width_holder;
+		margin:0 auto;
+		margin-top:10px;
+	}
+
+	#login{
+		@form_login_register_rules();
+	}
+	#register{
+		@form_login_register_rules();
+	}
+}
